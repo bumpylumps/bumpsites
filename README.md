@@ -24,7 +24,7 @@ Alex Fulop
 
 ## License
 
-This project is licensed under the Creative Commons 3.0 Unported see the LICENSE.md file for details
+This project is licensed under Creative Commons 3.0 Unported, see the LICENSE.md file for details
 
 ## Acknowledgments
 
