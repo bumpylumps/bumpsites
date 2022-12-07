@@ -25,25 +25,25 @@
 
 * Check on mobile layouts
 
-* Polish up README on github
+* x -Polish up README on github
 
- 
+* x - Fix layout so past projects are in same section, same sizes
 
 
 
 ** Add new projects to projects section ** 
 
-* Add MVC lecture 
+*  x- Add MVC lecture 
 
-* Add 100hrs mvp (ghostBuds)
+*  x- Add 100hrs mvp (ghostBuds)
 
-* Add QU site 
+*  x- Add QU site 
 
 * Add class group project(s)
 
-* Add Tarotbumps
+*  x- Add Tarotbumps
 
-* Pick one (1) demo site to showcase and put at bottom
+*  x- Pick one (1) demo site to showcase and put at bottom
 
 
 
