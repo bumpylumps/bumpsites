@@ -13,7 +13,7 @@ const Bio = () => {
             My greatest strengths are in Front End. I have excellent commercial experience in this area, with a keen interest to expand my skillset in a diverse range of technologies.
 
 
-            I am open to new opportunities in the Tri-state area or remote.
+            <strong>I am open to new opportunities in the Tri-state area or remote.</strong>
       </p>
     </>
   )

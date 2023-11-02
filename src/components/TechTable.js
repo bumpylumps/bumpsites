@@ -11,9 +11,9 @@ const TechTable = () => {
                 <td>Express</td>
             </tr>
             <tr>
-                <td>CSS</td>
-                <td>HTML</td>
-                <td>Go</td>
+                <td>SASS</td>
+                <td>MongoDB</td>
+                <td>NextJS</td>
             </tr>
         </tbody>
       </table>

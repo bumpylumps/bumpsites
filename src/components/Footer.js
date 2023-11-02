@@ -10,6 +10,7 @@ const Footer = () => {
         <li><a href="">Twitter</a></li>
         <li><a href="">Instagram</a></li>
       </ul>
+      <hr />
       <span>&copy; Bumpsites</span>
     </>
   )
