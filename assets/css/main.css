@@ -3406,4 +3406,6 @@ input, select, textarea {
 
 
 
-	
+	#contact p{
+		text-align: left;
+	}
