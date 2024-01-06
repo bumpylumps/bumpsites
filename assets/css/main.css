@@ -177,10 +177,9 @@ input, select, textarea {
 		padding: 1em 0 1em 2em;
 	}
 
-	.send button {
-		margin: 1% 75%;
-	}
+	
 
+	/* Custom Styles */
 	#bumpy{
 		border-radius: 2%;
 		height: 15%;
@@ -221,9 +220,8 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		margin: 0 auto;
-		max-width: 100%;
-		width: 1400px;
+		margin: 5% auto;
+		width: 75%;
 	}
 
 		.container.medium {
@@ -2181,7 +2179,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		background: none;
-		border: solid 1px;
+		border: solid 1px #475881;
 		border-radius: 0;
 		color: inherit;
 		cursor: pointer;
@@ -2189,7 +2187,7 @@ input, select, textarea {
 		font-size: 0.8em;
 		font-weight: 900;
 		letter-spacing: 2px;
-		min-width: 18em;
+		min-width: 13em;
 		padding: 0 0.75em;
 		line-height: 3.75em;
 		text-align: center;
@@ -2203,7 +2201,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			background: rgba(188, 202, 206, 0.15);
-			border-color: inherit;
+			border-color: #475881;
 		}
 
 		input[type="button"].primary,
@@ -2686,8 +2684,9 @@ input, select, textarea {
 	#footer {
 		background: #E8EEF4;
 		color: #7c8081;
-		padding: 5em 5em 10em 5em;
+		padding: 5em 5em 3em 5em;
 		text-align: center;
+		width: 100%;
 	}
 
 		#footer .copyright {
@@ -3398,14 +3397,65 @@ input, select, textarea {
 			}
 
 			/*Submit form button*/
-			.send button{ 
-				margin: 3% 3%;
-			}
-
+	
 	}
 
+/* Contact Form */
+	.contact-top-container {
+		display: flex;
 
+	}
 
 	#contact p{
 		text-align: left;
+		font-weight: 480; 
+		color: aliceblue;
 	}
+
+	#contact {
+		background-color: #273a60;
+	}
+
+	#contact input{ 
+		color: aliceblue;
+    	background-color: #475881;
+    	font-weight: 500;
+    	border: none;
+	}
+
+	#contactForm h2, h5 {
+		font-weight: 530;
+	}
+
+
+
+	.form-input-line {
+		width: 45%; 
+		margin: 2% auto;
+	}
+
+	.form-input-block {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	#form-message-block {
+		min-height: 250px;
+		color: aliceblue;
+    	background-color: #475881;
+    	font-weight: 500;
+    	border: none;
+	}
+
+	.form-input-button {
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 5% 2.5% 3% 0%;
+	}
+
+	/* .form-input-button button { */
+		/* color: aliceblue; */
+    	/* background-color: #475881; */
+    	/* font-weight: 500; */
+    	/* border: none; */
+	/* } */
