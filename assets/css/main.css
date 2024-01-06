@@ -121,7 +121,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		font-weight: 400;
+		font-weight: 530;
 	}
 
 	p, ul, ol, dl, table, blockquote {
@@ -2209,9 +2209,9 @@ input, select, textarea {
 		input[type="reset"].primary,
 		button.primary,
 		.button.primary {
-			background: #83d3c9;
-			border-color: #83d3c9;
-			color: #fff !important;
+		    background: #2b395f;
+    		border-color: aliceblue;
+    		color: #fff !important;
 		}
 
 			input[type="button"].primary:hover,
@@ -2219,8 +2219,8 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background: #96dad1 !important;
-				border-color: #96dad1 !important;
+				background: rgba(188, 202, 206, 0.15) !important;
+				border-color: aliceblue !important;
 			}
 
 		input[type="button"].fit,
@@ -2388,7 +2388,7 @@ input, select, textarea {
 					}
 
 					#header nav ul li a {
-						border: solid 1px transparent;
+						border: solid 1px #475881;
 						color: inherit;
 						display: inline-block;
 						line-height: 1em;
@@ -2635,6 +2635,7 @@ input, select, textarea {
 
 	#main {
 		background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
+		background-color: #2b395f;
 		background-position: top left, top right, bottom left, bottom right;
 		background-repeat: no-repeat;
 		background-size: 25em;
@@ -2661,6 +2662,11 @@ input, select, textarea {
 		padding-top: 5em;
 	}
 
+	#main p {
+		font-weight: 300;
+		color: aliceblue;
+	}
+
 /* CTA */
 
 	#cta {
@@ -2682,11 +2688,14 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #E8EEF4;
-		color: #7c8081;
-		padding: 5em 5em 3em 5em;
+		background: #2b395f;
+		color: aliceblue;
+		padding: 1em;
 		text-align: center;
 		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 		#footer .copyright {
@@ -3423,8 +3432,19 @@ input, select, textarea {
     	border: none;
 	}
 
+	#contactForm {
+		width: 100%;
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/light-bl.svg"), url("images/light-br.svg");
+		background-position: top left, top right, bottom left, bottom right;
+		background-repeat: no-repeat;
+		background-size: 25em;
+		padding: 7em 0;
+		margin: 0 auto;
+	}
+
 	#contactForm h2, h5 {
 		font-weight: 530;
+		color: #475881;
 	}
 
 
@@ -3453,9 +3473,24 @@ input, select, textarea {
 		margin: 5% 2.5% 3% 0%;
 	}
 
-	/* .form-input-button button { */
-		/* color: aliceblue; */
-    	/* background-color: #475881; */
-    	/* font-weight: 500; */
-    	/* border: none; */
-	/* } */
+	.icons {
+		margin-bottom: 0;
+	}
+
+	/* projects */
+
+	#projects {
+		margin: 0 auto;
+		background: #f4f6fa;
+		padding: 5% 0% 2% 0%;
+	}
+
+	#projects h2{
+		font-weight: 530;
+	}
+
+	#projects h3, h2{ 
+		color: #475881;
+	}
+
+	 
