@@ -2,8 +2,8 @@
     <style type="text/css"><![CDATA[
 		line
 		{
-			stroke: rgba(255,255,255,0.2);
-			stroke-width: 1px;
+			stroke: rgba(43,57,95,0.2);
+			stroke-width: 3px;
 		}
     ]]></style>
 	<line x1="0" y1="0" x2="500" y2="500" />
