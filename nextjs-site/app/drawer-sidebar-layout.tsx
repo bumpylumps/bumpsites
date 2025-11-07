@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react';
 import { Menu, X, Github, Instagram, Twitter, ChevronDown, ChevronRight, Home, User, BookOpen, Briefcase, FileText } from 'lucide-react';
 
@@ -5,7 +7,7 @@ const DrawerSidebarLayout = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [activePage, setActivePage] = useState('home');
   const [blogExpanded, setBlogExpanded] = useState(false);
-  const [previousPage, setPreviousPage] = useState(null);
+  const [previousPage, setPreviousPage] = useState<string | null>(null);
 
   const navigation = [
     { id: 'home', label: 'Home', icon: Home },
@@ -24,7 +26,7 @@ const DrawerSidebarLayout = () => {
     { id: 'resume', label: 'Resume', icon: FileText }
   ];
 
-  const getPageLabel = (pageId) => {
+  const getPageLabel = (pageId: string) => {
     // Check main navigation
     const mainNav = navigation.find(item => item.id === pageId);
     if (mainNav) return mainNav.label;
@@ -39,7 +41,7 @@ const DrawerSidebarLayout = () => {
     return pageId;
   };
 
-  const handleNavClick = (id) => {
+  const handleNavClick = (id: string) => {
     if (activePage !== id) {
       setPreviousPage(activePage);
     }
@@ -264,7 +266,7 @@ const DrawerSidebarLayout = () => {
     </div>
   );
 
-  const BlogList = ({ category }) => {
+  const BlogList = ({ category }: { category: 'paranormal' | 'tech' | 'life' }) => {
     const blogs = {
       paranormal: [
         { title: 'The Mystery of Room 404', excerpt: 'An investigation into the most haunted hotel room in America...' },
