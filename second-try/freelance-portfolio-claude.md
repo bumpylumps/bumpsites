@@ -164,3 +164,40 @@
 4. **Do you want visitors to stay on one page or navigate between pages?**
 
 Let me know which direction resonates and I'll build out that specific design!
+
+
+
+
+
+##--- Subdomain deployment --## 
+Ah, I see! So you want to deploy Ghost Planet to ghostplanet.bumpsites.com. Here's what you need to do:
+Step 1: Choose a Hosting Platform
+Since you mentioned using Fly.io for redeployments, here are some good options:
+Popular choices:
+
+Vercel - Easy for React/Next.js, free tier, automatic SSL
+Netlify - Similar to Vercel, great for static sites
+Fly.io - You're already familiar with it
+Render - Good alternative to Heroku
+Railway - Simple deployment
+
+Step 2: Deploy Ghost Planet
+
+Push your Ghost Planet code to GitHub
+Connect the repo to your hosting platform
+The platform will give you a URL (like ghostplanet.fly.dev or ghostplanet.vercel.app)
+
+Step 3: Add DNS Record
+Once deployed, add a CNAME record in your DNS:
+Type: CNAME
+Name: ghostplanet
+Value: [the URL from your hosting platform]
+For example, if using Vercel:
+Name: ghostplanet
+Value: cname.vercel-dns.com
+Step 4: Configure Custom Domain in Hosting
+In your hosting platform's dashboard:
+
+Go to domain settings
+Add custom domain: ghostplanet.bumpsites.com
+It will verify the DNS and set up SSL automatically
