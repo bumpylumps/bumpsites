@@ -1,6 +1,7 @@
+import Link from 'next/link'
+import { Menu, X, Github, Instagram, Twitter, ChevronDown, ChevronRight, Home, User, BookOpen, Briefcase, FileText } from 'lucide-react';
 
-
-export default function Home() {
+export default function HomePage() {
 
   return (
   <div className="min-h-screen bg-slate-50">
@@ -42,8 +43,8 @@ export default function Home() {
         <div className="hidden md:grid grid-cols-6 grid-rows-4 gap-4 h-[800px]">
           
           {/* About Card - Large rectangle (2x2) */}
-          <button
-            onClick={() => handleNavClick('about')}
+          <Link
+            href="/about"
             className="col-span-3 row-span-2 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white hover:scale-[1.02] transition-transform shadow-xl group overflow-hidden relative">
             <User size={48} className="mb-4 text-purple-400 group-hover:text-purple-300 transition-colors" />
             <h2 className="text-4xl font-bold mb-4">About Me</h2>
@@ -52,11 +53,11 @@ export default function Home() {
               incididunt ut labore et dolore magna aliqua. Discover my journey, skills, and what drives me 
               to create unique digital experiences.
             </p>
-          </button>
+          </Link>
 
           {/* Projects Card - Tall (1.5x2) */}
-          <button
-            onClick={() => handleNavClick('projects')}
+          <Link 
+            href="/projects"
             className="col-span-2 row-span-2 bg-gradient-to-br from-indigo-600 to-pink-600 rounded-2xl p-6 text-white hover:scale-[1.02] transition-transform shadow-xl group">
             <Briefcase size={36} className="mb-3 group-hover:scale-110 transition-transform" />
             <h2 className="text-2xl font-bold mb-3">Projects</h2>
@@ -68,20 +69,20 @@ export default function Home() {
               <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-2 text-sm">GhostBuds</div>
               <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-2 text-sm">Hi-Strangeness</div>
             </div>
-          </button>
+          </Link>
 
           {/* Resume Card - Tall (1x2) */}
-          <button
-            onClick={() => handleNavClick('resume')}
+          <Link
+            href="/resume"
             className="col-span-1 row-span-2 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl p-6 text-white hover:scale-[1.02] transition-transform shadow-xl group flex flex-col items-center justify-center">
             <FileText size={48} className="mb-4 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-bold text-center mb-2">Resume</h3>
             <p className="text-emerald-100 text-sm text-center">Skills & Experience</p>
-          </button>
+          </Link>
 
           {/* Tech Blog Card - Wide rectangle (2x1) */}
-          <button
-            onClick={() => handleNavClick('tech')}
+          <Link
+            href="/blog/tech"
             className="col-span-2 row-span-1 bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-6 text-white hover:scale-[1.02] transition-transform shadow-xl group">
             <div className="flex items-center gap-4">
               <div className="text-5xl">💻</div>
@@ -90,11 +91,11 @@ export default function Home() {
                 <p className="text-blue-100 text-sm">Code, frameworks, and insights</p>
               </div>
             </div>
-          </button>
+          </Link>
 
           {/* Slice of Life Card - Wide rectangle (2x1) */}
-          <button
-            onClick={() => handleNavClick('life')}
+          <Link
+            href="/blog/life"
             className="col-span-2 row-span-1 bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl p-6 text-white hover:scale-[1.02] transition-transform shadow-xl group">
             <div className="flex items-center gap-4">
               <div className="text-5xl">☕</div>
@@ -103,7 +104,7 @@ export default function Home() {
                 <p className="text-rose-100 text-sm">Stories and everyday moments</p>
               </div>
             </div>
-          </button>
+          </Link>
 
           {/* Contact/Social Card - Medium (2x1) */}
           <div className="col-span-2 row-span-1 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 text-white shadow-xl flex items-center justify-center">
@@ -127,64 +128,64 @@ export default function Home() {
           </div>
 
           {/* Paranormal Blog Card - Small square */}
-          <button
-            onClick={() => handleNavClick('paranormal')}
+          <Link
+            href="/blog/paranormal"
             className="col-span-1 row-span-1 bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-6 text-white hover:scale-[1.02] transition-transform shadow-xl group flex flex-col items-center justify-center">
             <div className="text-5xl mb-2">👻</div>
             <h3 className="text-lg font-bold text-center">Paranormal</h3>
-          </button>
+          </Link>
 
         </div>
 
         {/* Mobile Stack */}
         <div className="md:hidden space-y-4">
-          <button
-            onClick={() => handleNavClick('about')}
+          <Link
+            href="/about"
             className="w-full bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 text-white shadow-xl">
             <User size={40} className="mb-3 text-purple-400" />
             <h2 className="text-2xl font-bold mb-2">About Me</h2>
             <p className="text-slate-300 text-sm">Discover my journey and what drives me</p>
-          </button>
+          </Link>
 
-          <button
-            onClick={() => handleNavClick('projects')}
+          <Link
+            href="/projects"
             className="w-full bg-gradient-to-br from-indigo-600 to-pink-600 rounded-2xl p-6 text-white shadow-xl">
             <Briefcase size={40} className="mb-3" />
             <h2 className="text-2xl font-bold mb-2">Projects</h2>
             <p className="text-pink-100 text-sm">Explore my portfolio of work</p>
-          </button>
+          </Link>
 
           <div className="grid grid-cols-2 gap-4">
-            <button
-              onClick={() => handleNavClick('paranormal')}
+            <Link
+              href="/blog/paranormal"
               className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-6 text-white shadow-xl">
               <div className="text-4xl mb-2">👻</div>
               <h3 className="text-lg font-bold">Paranormal</h3>
-            </button>
+            </Link>
 
-            <button
-              onClick={() => handleNavClick('tech')}
+            <Link
+              href="/blog/tech"
               className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-6 text-white shadow-xl">
               <div className="text-4xl mb-2">💻</div>
               <h3 className="text-lg font-bold">Tech</h3>
-            </button>
+            </Link>
           </div>
 
-          <button
-            onClick={() => handleNavClick('life')}
+          <Link
+            href="/blog/life"
             className="w-full bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl p-6 text-white shadow-xl">
             <div className="text-4xl mb-2">☕</div>
             <h3 className="text-xl font-bold mb-1">Slice of Life</h3>
             <p className="text-rose-100 text-sm">Stories and everyday moments</p>
-          </button>
+          </Link>
 
-          <button
-            onClick={() => handleNavClick('resume')}
+          <Link
+            href="/resume"
             className="w-full bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl p-6 text-white shadow-xl">
             <FileText size={40} className="mb-3" />
             <h3 className="text-xl font-bold mb-1">Resume</h3>
             <p className="text-emerald-100 text-sm">Skills & Experience</p>
-          </button>
+          </Link>
         </div>
       </div>
     </div>

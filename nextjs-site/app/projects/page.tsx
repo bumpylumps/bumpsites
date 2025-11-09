@@ -1,3 +1,5 @@
+import { Menu, X, Github, Instagram, Twitter, ChevronDown, ChevronRight, Home, User, BookOpen, Briefcase, FileText } from 'lucide-react';
+
 
 export default function ProjectsPage(){
     const projects = [

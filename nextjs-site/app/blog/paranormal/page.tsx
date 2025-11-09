@@ -10,7 +10,7 @@ export default function ParanormalBlog(){
 
     return (
         <div className="max-w-4xl mx-auto px-6 py-20">
-        <h1>Tech Blog</h1>
+        <h1>Paranormal Blog</h1>
         {posts.map((post, idx) => (
             <div key={idx}>
                 {/* post card JSX */}

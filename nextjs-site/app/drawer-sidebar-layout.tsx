@@ -42,6 +42,8 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
             </button>
             <span className="text-2xl font-bold">YN</span>
           </div>
+        </div>
+        </div>
 
 
       {/* Overlay */}
@@ -134,8 +136,6 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
         {children}
       </main>
     </div>
-    </div>
-  </div>
   );
 };
 
