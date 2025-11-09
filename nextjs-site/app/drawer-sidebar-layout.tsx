@@ -1,12 +1,15 @@
 'use client'
 
+
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'
 import { Menu, X, Github, Instagram, Twitter, ChevronDown, ChevronRight, Home, User, BookOpen, Briefcase, FileText } from 'lucide-react';
 
 const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [blogExpanded, setBlogExpanded] = useState(false);
+  const pathname = usePathname();
   const toggleBlog = () => {
     setBlogExpanded(!blogExpanded)
   }
@@ -28,6 +31,17 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
     { href: '/resume', label: 'Resume', icon: FileText }
   ];
 
+  const getBreadcrumbs = () => {
+    const segments = pathname.split('/').filter(Boolean);
+
+    return segments.map((segment, index) => {
+      const path = '/' + segments.slice(0, index + 1).join('/');
+      const label = segment.charAt(0).toUpperCase() + segment.slice(1);
+
+      return { path, label };
+    });
+  };
+
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -37,13 +51,31 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
           <div className="flex items-center space-x-3">
             <button
               onClick={() => setIsDrawerOpen(!isDrawerOpen)}
-              className="hover:text-purple-600 transition-colors">
+              className="text-slate-900 hover:text-purple-600 transition-colors">
               {isDrawerOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
-            <span className="text-2xl font-bold">YN</span>
+            <span className="text-2xl font-bold text-slate-900">YN</span>
           </div>
+
+        {/* Breadcrumbs */}
+        {pathname !== '/' && (
+          <div className="flex items-center text-sm text-slate-900">
+            <Link href="/" className="hover:text-purple-600 transition-colors">
+              Home
+            </Link>
+            {getBreadcrumbs().map((crumb, idx) => (
+              <React.Fragment key={crumb.path}>
+                <ChevronRight size={16} className="mx-2" /> 
+                <Link href={crumb.path} className="hover:text-purple-600 transition-colors">
+                  {crumb.label}
+                </Link>
+              </React.Fragment>
+            ))}
+          </div>
+        )}
+
         </div>
-        </div>
+      </div>
 
 
       {/* Overlay */}
@@ -90,7 +122,7 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
                             <Link
                               key={subItem.href}
                               href={subItem.href}
-                              className={`w-full text-left px-12 py-3 hover:bg-slate-700 transition-colors`}>
+                              className={`w-full text-left px-12 py-3 hover:bg-slate-700 transition-color ${pathname === subItem.href ? 'bg-purple-600 hover:bg-purple-700' : ''}`}>
                               {subItem.label}
                             </Link>
                           ))}
@@ -100,7 +132,7 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
                   ) : (
                     <Link
                       href={item.href}
-                      className={`w-full flex items-center space-x-3 px-6 py-3 hover:bg-slate-800 transition-colors`}>
+                      className={`w-full flex items-center space-x-3 px-6 py-3 hover:bg-slate-800 transition-colors ${pathname === item.href ? 'bg-purple-600 hover:bg-purple-700' : ''}`}>
                       <Icon size={20} />
                       <span className="font-medium">{item.label}</span>
                     </Link>
