@@ -3,7 +3,7 @@ import styles from './page.module.css'
 
 export default function Resume() {
     return (
-<div className="max-w-4xl mx-auto p-8">
+<div className={`max-w-4xl mx-auto p-8 ${styles.resumeContainer}`}>
     <div className={styles.buttonContainer}>
     <a href="/resume.pdf"
         download="Alexander Fulop-resume.pdf"
@@ -21,13 +21,19 @@ export default function Resume() {
     <div className={`${styles.section} ${styles.careerSummary}`}>
         <h2 className={styles.sectionTitle}>Career Summary</h2>
         <div className={styles.summaryItem}>
-            <span className={styles.summaryLabel}>Experience</span> 4 years Full Stack Web Development
+            <span className={styles.summaryLabel}>Experience:</span> 4+ years of Full Stack Web Development
         </div>
         <div className={styles.summaryItem}>
-            <span className={styles.summaryLabel}>Languages</span> NextJS, Typescript, Go, Node.js, C#
+            <span className={styles.summaryLabel}>Languages:</span> TypeScript, Go, C#, Node.js
         </div>
         <div className={styles.summaryItem}>
-            <span className={styles.summaryLabel}>Tools</span> Git, Figma, Excalidraw, Whiteboard + Marker, Postman, Ngrok, dotNet
+            <span className={styles.summaryLabel}>Frameworks:</span> Next.js, React, .NET 
+        </div>
+        <div className={styles.summaryItem}>
+            <span className={styles.summaryLabel}>Tools:</span> Git, Postman, Ngrok, Docker
+        </div>
+        <div className={styles.summaryItem}>
+            <span className={styles.summaryLabel}>AI Tools:</span> Claude (MCP implementation), AMP for debugging and code generation
         </div>
     </div>
     
@@ -36,35 +42,18 @@ export default function Resume() {
         
         <div className={styles.jobEntry}>
             <div className={styles.jobHeader}>
-                <div className={styles.jobCompany}>RevOps HQ</div>
-                <div className={styles.jobLocation}>Remote, USA</div>
-            </div>
-            <div className={styles.jobTitleRow}>
-                <div className={styles.jobTitle}>Freelance Software Engineer</div>
-                <div className={styles.jobDates}>July/2025 - Present</div>
-            </div>
-            <div className={styles.jobTech}>Technologies: Typescript, Node.js</div>
-            <div className={styles.jobDescription}>
-                <div className={styles.bulletPoint}>Built automated email templates with Shopify API integration for abandoned checkout recovery</div>
-                <div className={styles.bulletPoint}>Developed microservices to sync clients business data across multiple CRM platforms</div>
-                <div className={styles.bulletPoint}>Created custom website features to meet specific client business requirements</div>
-            </div>
-        </div>
-        
-        <div className={styles.jobEntry}>
-            <div className={styles.jobHeader}>
                 <div className={styles.jobCompany}>Unlimited Tech Solutions</div>
                 <div className={styles.jobLocation}>Remote, USA</div>
             </div>
             <div className={styles.jobTitleRow}>
-                <div className={styles.jobTitle}>Software Engineer</div>
-                <div className={styles.jobDates}>January/2024 - January/2025</div>
+                <div className={styles.jobTitle}>Software Engineer (Full-Time)</div>
+                <div className={styles.jobDates}>January 2024 - January 2025</div>
             </div>
             <div className={styles.jobTech}>Technologies: NextJS, TypeScript, Node.js, C#</div>
             <div className={styles.jobDescription}>
                 <div className={styles.bulletPoint}>Designed and built automated microservices for CRM integration, saving clients $77,000 annually in operations</div>
                 <div className={styles.bulletPoint}>Optimized microservice performance for long-term clients:
-                    <div className={styles.subBullet}>Improved performance through code refactoring and reducing API calls</div>
+                    <div className={styles.subBullet}>Improved microservice performance by 60% through code refactoring, reducing API calls from 500 to 50 per sync cycle</div>
                     <div className={styles.subBullet}>Updated microservice features for new client platforms</div>
                 </div>
                 <div className={styles.bulletPoint}>Led team collaboration initiatives:
@@ -74,20 +63,35 @@ export default function Resume() {
                 </div>
                 <div className={styles.bulletPoint}>Mentored junior developer through code reviews, skill development and debugging assistance</div>
             </div>
-        </div>        
+        </div>
+        
         <div className={styles.jobEntry}>
             <div className={styles.jobHeader}>
                 <div className={styles.jobCompany}>Bumpsites</div>
                 <div className={styles.jobLocation}>Albuquerque, NM</div>
             </div>
             <div className={styles.jobTitleRow}>
-                <div className={styles.jobTitle}>Owner/Freelance Web Developer</div>
-                <div className={styles.jobDates}>January/2022 – Present</div>
+                <div className={styles.jobTitle}>Owner/Freelance Software Engineer</div>
+                <div className={styles.jobDates}>January 2022 – Present</div>
             </div>
-            <div className={styles.jobTech}>Technologies: JS/TS, React, NextJS, dotNet, Go, nGrok</div>
+            <div className={styles.jobTech}>Technologies: NextJS, TypeScript, dotNet, Go</div>
+            
             <div className={styles.jobDescription}>
-                <div className={styles.bulletPoint}>Performed code quality analysis and debugging to enhance client products</div>
-                <div className={styles.bulletPoint}>Developed custom website features including UI elements, backend systems, and servers</div>
+                <div style={{fontWeight: 600, marginTop: '0.5rem', marginBottom: '0.25rem'}}>Contract Engagements:</div>
+                
+                <div style={{marginLeft: '1rem', marginTop: '0.5rem'}}>
+                    <div style={{fontWeight: 500}}>RevOps HQ (July 2025 - October 2025)</div>
+                    <div className={styles.jobTech}>Technologies: TypeScript, Node.js</div>
+                    <div className={styles.bulletPoint}>Implemented Model Context Protocol (MCP) servers enabling AI assistants to securely access client databases, demonstrating expertise in emerging AI integration patterns</div>
+                    <div className={styles.bulletPoint}>Conducted technical discovery for prospective clients, with solutions leading to 3 successful contract conversions</div>
+                    <div className={styles.bulletPoint}>Built automated abandoned cart recovery system using Shopify API, increasing client revenue by 30%</div>
+                    <div className={styles.bulletPoint}>Developed microservices synchronizing business data across HubSpot, Magento, and custom CRMs</div>
+                    <div className={styles.bulletPoint}>Created case management MVP with document uploading, court order tracking, and a message system for tracking communication between parties</div>
+                </div>
+                
+                <div style={{fontWeight: 600, marginTop: '1rem', marginBottom: '0.25rem'}}>Core Services:</div>
+                <div className={styles.bulletPoint}>Architected and deployed custom web applications for small business clients</div>
+                <div className={styles.bulletPoint}>Built podcast websites with automated content syndication via Buzzsprout and YouTube APIs, streamlining multi-format episode publishing</div>
             </div>
         </div>
     </div>
@@ -97,7 +101,7 @@ export default function Resume() {
         <a href="https://github.com/bumpylumps">Github</a> ▪ <a href="https://www.linkedin.com/in/alexander-fulop/">Linkedin</a> ▪ <a href="https://www.bumpsites.com/">Bumpsites</a> ▪ <a href="https://x.com/alayfalupe">Twitter</a>
         </div>
     </div>
-        </div>
+</div>
 
     );
 }

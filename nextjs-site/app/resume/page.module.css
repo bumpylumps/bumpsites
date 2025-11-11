@@ -2,10 +2,20 @@
        @media print {
             body { margin: 0; }
             .page-break { page-break-before: always; }
-            .footer { position: fixed; bottom: 0; width: 100%; }
+            .buttonContainer { display: none; }
+            .footer { 
+                position: relative;  /* Change from fixed */
+                bottom: auto;
+                width: 100%;
+            }
+            
+            .resumeContainer {
+                padding: 0.1in !important;  /* Override all padding */
+                margin-top: 0 !important;
+            }
         }
         
-        body {
+        .resumeContainer {
             font-family: 'Times New Roman', serif;
             font-size: 12pt;
             line-height: 1.1;
