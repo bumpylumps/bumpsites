@@ -43,26 +43,42 @@ export default function HomePage() {
       {/* Bento Card Layout */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Desktop Bento Grid */}
-        <div className="hidden md:grid grid-cols-6 grid-rows-4 gap-4 h-[800px]">
+        <div className="hidden md:grid grid-cols-12 grid-rows-4 gap-4 h-[800px]">
           
-          {/* About Card - Large rectangle (2x2) */}
+          <BentoCard 
+            href="/blog"
+            title="Blog"
+            icon={Terminal}
+            gridSpan="col-span-8 row-span-2"
+            gradient="from-blue-600 to-blue-800"
+            description="Tech, Life, and the Paranormal"
+          />
+
           <BentoCard 
             href= '/about'
             icon={User}
             title="About Me"
-            gridSpan="col-span-3 row-span-2"
+            gridSpan="col-span-4 row-span-2"
             gradient= "from-slate-800 to-slate-900"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
               incididunt ut labore et dolore magna aliqua. Discover my journey, skills, and what drives me 
               to create unique digital experiences."
           />
 
-          {/* Projects Card - Tall (1.5x2) */}
+            <BentoCard 
+            href="/resume"
+            icon={FileText}
+            title="Resume"
+            gridSpan="col-span-5 row-span-2"
+            gradient="from-emerald-600 to-teal-700"
+            description="Skills & Experience"
+          />
+
           < BentoCard 
             href="/projects"
             icon={Briefcase}
             title="Projects"
-            gridSpan="col-span-2 row-span-2"
+            gridSpan="col-span-7 row-span-2"
             gradient="from-indigo-600 to-pink-600"
             description="Explore my portfolio of creative work and technical experiments."
             >
@@ -71,52 +87,10 @@ export default function HomePage() {
                 <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-2 text-sm">GhostBuds</div>
                 <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-2 text-sm">Hi-Strangeness</div>
               </div>
-            </BentoCard>
-     
-          {/* Resume Card - Tall (1x2) */}
-          <BentoCard 
-            href="/resume"
-            icon={FileText}
-            title="Resume"
-            gridSpan="col-span-1 row-span-2"
-            gradient="from-emerald-600 to-teal-700"
-            description="Skills & Experience"
-          />
-
-          {/* Tech Blog Card - Wide rectangle (2x1) */}
-          <BentoCard 
-            href="/blog/tech"
-            title="Tech Blog"
-            icon={Terminal}
-            gridSpan="col-span-2 row-span-1"
-            gradient="from-blue-600 to-blue-800"
-            description="Code, frameworks, and insights"
-          />
-          
-  
-          {/* Paranormal Blog Card - Small square */}
-          <BentoCard
-            href="/blog/paranormal"
-            title="Paranormal Adventures"
-            icon={Ghost}
-            gridSpan="col-span-2 row-span-1"
-            gradient="from-purple-600 to-purple-800"
-            description="For all the things going bump in the night"
-          />
-
-          {/* Slice of Life Card - Wide rectangle (2x1) */}
-          <BentoCard 
-            href="/blog/life"
-            title="Slice of Life"
-            icon={Coffee}
-            gridSpan="col-span-2 row-span-1"
-            gradient="from-pink-500 to-rose-600"
-            description="Stories and everyday moments"
-          />
-      
+            </BentoCard>    
 
           {/* Contact/Social Card - Medium (2x1) */}
-          <div className="col-span-6 row-span-1 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 text-white shadow-xl flex items-center justify-center">
+          <div className="col-span-12 row-span-1 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 text-white shadow-xl flex items-center justify-center">
             <div className="text-center">
               <h3 className="text-xl font-bold mb-3">Connect With Me</h3>
               <div className="flex gap-4 justify-center">
