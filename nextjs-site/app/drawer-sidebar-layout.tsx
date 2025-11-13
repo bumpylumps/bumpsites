@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 import { Menu, X, Github, Instagram, Twitter, ChevronDown, ChevronRight, Home, User, BookOpen, Briefcase, FileText } from 'lucide-react';
 
+
+
 const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [blogExpanded, setBlogExpanded] = useState(false);
@@ -122,7 +124,7 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
                             <Link
                               key={subItem.href}
                               href={subItem.href}
-                              className={`w-full text-left px-12 py-3 hover:bg-slate-700 transition-color ${pathname === subItem.href ? 'bg-purple-600 hover:bg-purple-700' : ''}`}>
+                              className={`block w-full text-left px-12 py-3 hover:bg-slate-700 transition-color ${pathname === subItem.href ? 'bg-purple-600 hover:bg-purple-700' : ''}`}>
                               {subItem.label}
                             </Link>
                           ))}

@@ -1,5 +1,7 @@
 import Link from 'next/link'
-import { Menu, X, Github, Instagram, Twitter, ChevronDown, ChevronRight, Home, User, BookOpen, Briefcase, FileText } from 'lucide-react';
+import { Menu, X, Github, Instagram, Twitter, ChevronDown, ChevronRight, Home, User, BookOpen, Briefcase, FileText, Terminal, Coffee, Ghost } from 'lucide-react';
+
+import { BentoCard } from '@/components/BentoCard';
 
 export default function HomePage() {
 
@@ -43,71 +45,83 @@ export default function HomePage() {
         <div className="hidden md:grid grid-cols-6 grid-rows-4 gap-4 h-[800px]">
           
           {/* About Card - Large rectangle (2x2) */}
-          <Link
-            href="/about"
-            className="col-span-3 row-span-2 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white hover:scale-[1.02] transition-transform shadow-xl group overflow-hidden relative">
-            <User size={48} className="mb-4 text-purple-400 group-hover:text-purple-300 transition-colors" />
-            <h2 className="text-4xl font-bold mb-4">About Me</h2>
-            <p className="text-slate-300 leading-relaxed text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
+          <BentoCard 
+            href= '/about'
+            icon={User}
+            title="About Me"
+            colSpan={3}
+            rowSpan={2}
+            gradient= "from-slate-800 to-slate-900"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
               incididunt ut labore et dolore magna aliqua. Discover my journey, skills, and what drives me 
-              to create unique digital experiences.
-            </p>
-          </Link>
+              to create unique digital experiences."
+          />
 
           {/* Projects Card - Tall (1.5x2) */}
-          <Link 
+          < BentoCard 
             href="/projects"
-            className="col-span-2 row-span-2 bg-gradient-to-br from-indigo-600 to-pink-600 rounded-2xl p-6 text-white hover:scale-[1.02] transition-transform shadow-xl group">
-            <Briefcase size={36} className="mb-3 group-hover:scale-110 transition-transform" />
-            <h2 className="text-2xl font-bold mb-3">Projects</h2>
-            <p className="text-pink-100 text-sm leading-relaxed mb-4">
-              Explore my portfolio of creative work and technical experiments.
-            </p>
-            <div className="space-y-2 text-left">
-              <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-2 text-sm">Ghost Planet</div>
-              <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-2 text-sm">GhostBuds</div>
-              <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-2 text-sm">Hi-Strangeness</div>
-            </div>
-          </Link>
-
+            icon={Briefcase}
+            title="Projects"
+            colSpan={2}
+            rowSpan={2}
+            gradient="from-indigo-600 to-pink-600"
+            description="Explore my portfolio of creative work and technical experiments."
+            >
+              <div className="space-y-2 text-left">
+                <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-2 text-sm">Ghost Planet</div>
+                <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-2 text-sm">GhostBuds</div>
+                <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-2 text-sm">Hi-Strangeness</div>
+              </div>
+            </BentoCard>
+     
           {/* Resume Card - Tall (1x2) */}
-          <Link
+          <BentoCard 
             href="/resume"
-            className="col-span-1 row-span-2 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl p-6 text-white hover:scale-[1.02] transition-transform shadow-xl group flex flex-col items-center justify-center">
-            <FileText size={48} className="mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="text-xl font-bold text-center mb-2">Resume</h3>
-            <p className="text-emerald-100 text-sm text-center">Skills & Experience</p>
-          </Link>
+            icon={FileText}
+            title="Resume"
+            colSpan={1}
+            rowSpan={2}
+            gradient="from-emerald-600 to-teal-700"
+            description="Skills & Experience"
+          />
 
           {/* Tech Blog Card - Wide rectangle (2x1) */}
-          <Link
+          <BentoCard 
             href="/blog/tech"
-            className="col-span-2 row-span-1 bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-6 text-white hover:scale-[1.02] transition-transform shadow-xl group">
-            <div className="flex items-center gap-4">
-              <div className="text-5xl">💻</div>
-              <div className="text-left">
-                <h3 className="text-2xl font-bold mb-1">Tech Blog</h3>
-                <p className="text-blue-100 text-sm">Code, frameworks, and insights</p>
-              </div>
-            </div>
-          </Link>
+            title="Tech Blog"
+            icon={Terminal}
+            colSpan={2}
+            rowSpan={1}
+            gradient="from-blue-600 to-blue-800"
+            description="Code, frameworks, and insights"
+          />
+          
+  
+          {/* Paranormal Blog Card - Small square */}
+          <BentoCard
+            href="/blog/paranormal"
+            title="Paranormal Adventures"
+            icon={Ghost}
+            colSpan={2}
+            rowSpan={1}
+            gradient="from-purple-600 to-purple-800"
+            description="For all the things going bump in the night"
+          />
 
           {/* Slice of Life Card - Wide rectangle (2x1) */}
-          <Link
+          <BentoCard 
             href="/blog/life"
-            className="col-span-2 row-span-1 bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl p-6 text-white hover:scale-[1.02] transition-transform shadow-xl group">
-            <div className="flex items-center gap-4">
-              <div className="text-5xl">☕</div>
-              <div className="text-left">
-                <h3 className="text-2xl font-bold mb-1">Slice of Life</h3>
-                <p className="text-rose-100 text-sm">Stories and everyday moments</p>
-              </div>
-            </div>
-          </Link>
+            title="Slice of Life"
+            icon={Coffee}
+            colSpan={2}
+            rowSpan={1}
+            gradient="from-pink-500 to-rose-600"
+            description="Stories and everyday moments"
+          />
+      
 
           {/* Contact/Social Card - Medium (2x1) */}
-          <div className="col-span-2 row-span-1 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 text-white shadow-xl flex items-center justify-center">
+          <div className="col-span-6 row-span-1 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 text-white shadow-xl flex items-center justify-center">
             <div className="text-center">
               <h3 className="text-xl font-bold mb-3">Connect With Me</h3>
               <div className="flex gap-4 justify-center">
@@ -127,13 +141,6 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Paranormal Blog Card - Small square */}
-          <Link
-            href="/blog/paranormal"
-            className="col-span-1 row-span-1 bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-6 text-white hover:scale-[1.02] transition-transform shadow-xl group flex flex-col items-center justify-center">
-            <div className="text-5xl mb-2">👻</div>
-            <h3 className="text-lg font-bold text-center">Paranormal</h3>
-          </Link>
 
         </div>
 
