@@ -50,8 +50,7 @@ export default function HomePage() {
             href= '/about'
             icon={User}
             title="About Me"
-            colSpan={3}
-            rowSpan={2}
+            gridSpan="col-span-3 row-span-2"
             gradient= "from-slate-800 to-slate-900"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
               incididunt ut labore et dolore magna aliqua. Discover my journey, skills, and what drives me 
@@ -63,8 +62,7 @@ export default function HomePage() {
             href="/projects"
             icon={Briefcase}
             title="Projects"
-            colSpan={2}
-            rowSpan={2}
+            gridSpan="col-span-2 row-span-2"
             gradient="from-indigo-600 to-pink-600"
             description="Explore my portfolio of creative work and technical experiments."
             >
@@ -80,8 +78,7 @@ export default function HomePage() {
             href="/resume"
             icon={FileText}
             title="Resume"
-            colSpan={1}
-            rowSpan={2}
+            gridSpan="col-span-1 row-span-2"
             gradient="from-emerald-600 to-teal-700"
             description="Skills & Experience"
           />
@@ -91,8 +88,7 @@ export default function HomePage() {
             href="/blog/tech"
             title="Tech Blog"
             icon={Terminal}
-            colSpan={2}
-            rowSpan={1}
+            gridSpan="col-span-2 row-span-1"
             gradient="from-blue-600 to-blue-800"
             description="Code, frameworks, and insights"
           />
@@ -103,8 +99,7 @@ export default function HomePage() {
             href="/blog/paranormal"
             title="Paranormal Adventures"
             icon={Ghost}
-            colSpan={2}
-            rowSpan={1}
+            gridSpan="col-span-2 row-span-1"
             gradient="from-purple-600 to-purple-800"
             description="For all the things going bump in the night"
           />
@@ -114,8 +109,7 @@ export default function HomePage() {
             href="/blog/life"
             title="Slice of Life"
             icon={Coffee}
-            colSpan={2}
-            rowSpan={1}
+            gridSpan="col-span-2 row-span-1"
             gradient="from-pink-500 to-rose-600"
             description="Stories and everyday moments"
           />
