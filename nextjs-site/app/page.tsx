@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Menu, X, Github, Instagram, Twitter, ChevronDown, ChevronRight, Home, User, BookOpen, Briefcase, FileText, Terminal, Coffee, Ghost } from 'lucide-react';
 
 import { BentoCard } from '@/components/BentoCard';
+import { MobileCard } from '@/components/MobileCard';
 
 export default function HomePage() {
 
@@ -146,53 +147,47 @@ export default function HomePage() {
 
         {/* Mobile Stack */}
         <div className="md:hidden space-y-4">
-          <Link
+          <MobileCard 
             href="/about"
-            className="w-full bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 text-white shadow-xl">
-            <User size={40} className="mb-3 text-purple-400" />
-            <h2 className="text-2xl font-bold mb-2">About Me</h2>
-            <p className="text-slate-300 text-sm">Discover my journey and what drives me</p>
-          </Link>
+            icon={User}
+            title="About Me"
+            gradient="from-pink-500 to-rose-600"
+          />
 
-          <Link
+          <MobileCard 
             href="/projects"
-            className="w-full bg-gradient-to-br from-indigo-600 to-pink-600 rounded-2xl p-6 text-white shadow-xl">
-            <Briefcase size={40} className="mb-3" />
-            <h2 className="text-2xl font-bold mb-2">Projects</h2>
-            <p className="text-pink-100 text-sm">Explore my portfolio of work</p>
-          </Link>
+            icon={Briefcase}
+            title="Projects"
+            gradient="from-indigo-600 to-pink-600"
+          />
 
-          <div className="grid grid-cols-2 gap-4">
-            <Link
-              href="/blog/paranormal"
-              className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-6 text-white shadow-xl">
-              <div className="text-4xl mb-2">👻</div>
-              <h3 className="text-lg font-bold">Paranormal</h3>
-            </Link>
+          <MobileCard 
+            href="/blog/paranormal"
+            icon={Ghost}
+            title="Paranormal Blog"
+            gradient="from-purple-600 to-purple-800"
+          />
 
-            <Link
-              href="/blog/tech"
-              className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-6 text-white shadow-xl">
-              <div className="text-4xl mb-2">💻</div>
-              <h3 className="text-lg font-bold">Tech</h3>
-            </Link>
-          </div>
+          <MobileCard 
+            href="/blog/tech"
+            icon={Terminal}
+            title="Tech Blog"
+            gradient="from-blue-600 to-blue-800"
+          />
 
-          <Link
+          <MobileCard 
             href="/blog/life"
-            className="w-full bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl p-6 text-white shadow-xl">
-            <div className="text-4xl mb-2">☕</div>
-            <h3 className="text-xl font-bold mb-1">Slice of Life</h3>
-            <p className="text-rose-100 text-sm">Stories and everyday moments</p>
-          </Link>
+            icon={Coffee}
+            title="Slice of Life Blog"
+            gradient="from-blue-600 to-blue-800"
+          />
 
-          <Link
+          <MobileCard 
             href="/resume"
-            className="w-full bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl p-6 text-white shadow-xl">
-            <FileText size={40} className="mb-3" />
-            <h3 className="text-xl font-bold mb-1">Resume</h3>
-            <p className="text-emerald-100 text-sm">Skills & Experience</p>
-          </Link>
+            icon={FileText}
+            title="Resume"
+            gradient="from-emerald-600 to-teal-700"
+          />
         </div>
       </div>
     </div>
