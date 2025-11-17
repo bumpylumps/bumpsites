@@ -10,6 +10,12 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-mgs-dark: #2f2f28;
+  --color-mgs-menu: #5f5f50;
+  --color-mgs-tan: #D9D2B6;
+  --color-mgs-border: #313129;
+  --color-mgs-text: #3c3c33;
+  --color-mgs-active: #767664; 
 }
 
 @media (prefers-color-scheme: dark) {

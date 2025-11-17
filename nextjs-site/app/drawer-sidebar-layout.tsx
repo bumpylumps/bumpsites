@@ -46,29 +46,29 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
 
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-mgs-dark">
       {/* Top Bar with Logo/Menu Button */}
-      <div className="fixed top-0 left-0 right-0 bg-white shadow-md z-40">
+      <div className="fixed top-0 left-0 right-0 bg-mgs-active shadow-md z-40">
         <div className="px-6 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <button
               onClick={() => setIsDrawerOpen(!isDrawerOpen)}
-              className="text-slate-900 hover:text-purple-600 transition-colors">
+              className="text-mgs-text hover:text-mgs-tan transition-colors">
               {isDrawerOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
-            <span className="text-2xl font-bold text-slate-900">YN</span>
+            <span className="text-2xl font-bold text-mgs-text">Alex Fulop</span>
           </div>
 
         {/* Breadcrumbs */}
         {pathname !== '/' && (
-          <div className="flex items-center text-sm text-slate-900">
-            <Link href="/" className="hover:text-purple-600 transition-colors">
+          <div className="flex items-center text-sm text-mgs-text">
+            <Link href="/" className="hover:text-mgs-tan transition-colors">
               Home
             </Link>
             {getBreadcrumbs().map((crumb, idx) => (
               <React.Fragment key={crumb.path}>
                 <ChevronRight size={16} className="mx-2" /> 
-                <Link href={crumb.path} className="hover:text-purple-600 transition-colors">
+                <Link href={crumb.path} className="hover:text-mgs-tan transition-colors">
                   {crumb.label}
                 </Link>
               </React.Fragment>
@@ -89,13 +89,13 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
       )}
 
       {/* Drawer Sidebar */}
-      <div className={`fixed top-0 left-0 h-full bg-slate-900 text-white w-80 transform transition-transform duration-300 ease-in-out z-50 ${
+      <div className={`fixed top-0 left-0 h-full bg-mgs-menu text-mgs-dark w-80 transform transition-transform duration-300 ease-in-out z-50 ${
         isDrawerOpen ? 'translate-x-0' : '-translate-x-full'
       }`}>
         <div className="flex flex-col h-full">
           {/* Drawer Header */}
-          <div className="p-6 border-b border-slate-700">
-            <h2 className="text-2xl font-bold">Navigation</h2>
+          <div className="p-6 border-b border-mgs-border">
+            <h2 className="text-2xl font-bold">My Stuff</h2>
           </div>
 
           {/* Navigation Links */}
@@ -108,7 +108,7 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
                     <>
                       <button
                         onClick={toggleBlog}
-                        className="w-full flex items-center justify-between px-6 py-3 hover:bg-slate-800 transition-colors">
+                        className="w-full flex items-center justify-between px-6 py-3 hover:bg-mgs-tan transition-colors">
                         <div className="flex items-center space-x-3">
                           <Icon size={20} />
                           <span className="font-medium">{item.label}</span>
@@ -119,12 +119,12 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
                         />
                       </button>
                       {blogExpanded && (
-                        <div className="bg-slate-800/50">
+                        <div className="bg-mgs-active">
                           {item.submenu.map((subItem) => (
                             <Link
                               key={subItem.href}
                               href={subItem.href}
-                              className={`block w-full text-left px-12 py-3 hover:bg-slate-700 transition-color ${pathname === subItem.href ? 'bg-purple-600 hover:bg-purple-700' : ''}`}>
+                              className={`block w-full text-left px-12 py-3 hover:bg-mgs-tan transition-color ${pathname === subItem.href ? 'bg-mgs-dark hover:bg-mgs-active' : ''}`}>
                               {subItem.label}
                             </Link>
                           ))}
@@ -134,7 +134,7 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
                   ) : (
                     <Link
                       href={item.href}
-                      className={`w-full flex items-center space-x-3 px-6 py-3 hover:bg-slate-800 transition-colors ${pathname === item.href ? 'bg-purple-600 hover:bg-purple-700' : ''}`}>
+                      className={`w-full flex items-center space-x-3 px-6 py-3 hover:bg-mgs-tan transition-colors ${pathname === item.href ? 'bg-mgs-menu hover:bg-mgs-active' : ''}`}>
                       <Icon size={20} />
                       <span className="font-medium">{item.label}</span>
                     </Link>

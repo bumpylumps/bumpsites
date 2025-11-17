@@ -17,11 +17,11 @@ export function BentoCard({ href, icon, title, gradient, gridSpan, description, 
     return (
         <Link
         href={href}
-        className={`${gridSpan} bg-gradient-to-br ${gradient} rounded-2xl p-8 text-white hover:scale-[1.02] transition-transform shadow-xl group overflow-hidden relative`}>
-            {Icon && <Icon size= {48} className="mb-4 text-purple-400 group-hover:text-purple-300 transition-colors"/>}
-            <h2 className="text-4xl font-bold mb-4">{title}</h2>
+        className={`${gridSpan} bg-mgs-menu p-8 text-mgs-dark hover:scale-[1.02] hover:bg-mgs-active transition-transform shadow-xl group overflow-hidden relative`}>
+            {Icon && <Icon size= {48} className="mb-4 text-mgs-text group-hover:text-mgs-tan transition-colors"/>}
+            <h2 className="text-4xl font-bold mb-4 group-hover:text-mgs-tan">{title}</h2>
             {description && (
-                <p className="text-slate-300 leading-relaxed text-lg">{description}</p>
+                <p className="text-mgs-dark leading-relaxed text-lg">{description}</p>
             )}
             {children}
         </Link> 
