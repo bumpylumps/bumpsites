@@ -46,22 +46,22 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
 
 
   return (
-    <div className="min-h-screen bg-mgs-dark">
+    <div className="min-h-screen bg-mgs-menu">
       {/* Top Bar with Logo/Menu Button */}
-      <div className="fixed top-0 left-0 right-0 bg-mgs-active shadow-md z-40">
+      <div className="fixed top-0 left-0 right-0 bg-mgs-menu border-b-2 border-b-mgs-border z-40">
         <div className="px-6 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <button
               onClick={() => setIsDrawerOpen(!isDrawerOpen)}
-              className="text-mgs-text hover:text-mgs-tan transition-colors">
+              className="text-mgs-dark hover:text-mgs-tan transition-colors">
               {isDrawerOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
-            <span className="text-2xl font-bold text-mgs-text">Alex Fulop</span>
+            <span className="text-2xl font-bold text-mgs-dark">Alex Fulop</span>
           </div>
 
         {/* Breadcrumbs */}
         {pathname !== '/' && (
-          <div className="flex items-center text-sm text-mgs-text">
+          <div className="flex items-center text-sm text-mgs-dark">
             <Link href="/" className="hover:text-mgs-tan transition-colors">
               Home
             </Link>
@@ -124,7 +124,7 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
                             <Link
                               key={subItem.href}
                               href={subItem.href}
-                              className={`block w-full text-left px-12 py-3 hover:bg-mgs-tan transition-color ${pathname === subItem.href ? 'bg-mgs-dark hover:bg-mgs-active' : ''}`}>
+                              className={`block w-full text-left px-12 py-3 hover:bg-mgs-tan transition-color ${pathname === subItem.href ? 'bg-mgs-active' : ''}`}>
                               {subItem.label}
                             </Link>
                           ))}
@@ -166,7 +166,7 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
       </div>
 
       {/* Main Content */}
-      <main className="pt-16">
+      <main className="pt-24">
         {children}
       </main>
     </div>

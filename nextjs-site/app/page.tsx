@@ -7,13 +7,13 @@ import { MobileCard } from '@/components/MobileCard';
 export default function HomePage() {
 
   return (
-  <div className="min-h-screen bg-mgs-dark">
+  <div className="min-h-screen bg-mgs-menu">
       {/* Hero Banner */}
       <div className="relative h-[60vh] bg-mgs-menu overflow-hidden">
       
         
         {/* Hero content */}
-        <div className="relative h-full flex items-center justify-center px-6">
+        <div className="relative h-full flex items-center justify-center border-b-2 border-b-mgs-border px-6">
           <div className="text-center">
             <h1 className="text-6xl md:text-8xl font-bold text-mgs-dark mb-6 tracking-tight">
               Alex Fulop
@@ -26,7 +26,7 @@ export default function HomePage() {
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2">
+          <div className="w-6 h-10 border-2 border-mgs-dark rounded-full flex justify-center pt-2">
             <div className="w-1 h-3 bg-white/50 rounded-full"></div>
           </div>
         </div>
@@ -68,9 +68,9 @@ export default function HomePage() {
   
 
           {/* Contact/Social Card - Medium (2x1) */}
-          <div className="col-span-12 row-span-1 bg-mgs-menu p-6 text-mgs-dark shadow-xl flex items-center justify-center">
+          <div className="col-span-12 row-span-1 border-2 border-mgs-border bg-mgs-menu p-6 text-mgs-dark flex items-center justify-center hover:bg-mgs-active hover:scale-[1.02] transition-transform group">
             <div className="text-center">
-              <h3 className="text-xl font-bold mb-3">Connect With Me</h3>
+              <h3 className="text-xl font-bold group-hover:text-mgs-tan mb-3">Connect With Me</h3>
               <div className="flex gap-4 justify-center">
                 <a href="https://github.com/bumpylumps" target="_blank" rel="noopener noreferrer" 
                    className="hover:scale-110 hover:text-mgs-tan transition-transform">

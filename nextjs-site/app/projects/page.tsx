@@ -7,8 +7,8 @@ import { ProjectCard } from '@/components/ProjectCard'
 export default function ProjectsPage(){
 
     return (
-      <div className="max-w-6xl mx-auto px-6 py-20">
-        <h1 className="text-5xl font-bold text-slate-900 mb-12">Projects</h1>
+      <div className="max-w-6xl bg-mgs-menu mx-auto px-6 py-20">
+        <h1 className="text-5xl font-bold text-mgs-dark mb-12">Projects</h1>
         
         <FeaturedProject 
             title = "Ghost-Planet"
@@ -16,7 +16,6 @@ export default function ProjectsPage(){
             href = "https://ghostplanet.bumpsites.com" 
             github = "https://github.com/bumpylumps"
             tech = "Go, NextJs"
-            gradient = "from-purple-900 to-indigo-900"
             logo = {<svg viewBox="0 0 200 200" className="w-full h-full">
             <defs>
               <radialGradient id="planetGlow" cx="50%" cy="50%" r="50%">
@@ -44,7 +43,6 @@ export default function ProjectsPage(){
           href=""
           github="https://github.com/bumpylumps/microservee"
           tech="JavaScript, Node.js"
-          gradient="from-orange-800 to-red-900"
         />
 
         <ProjectCard 
@@ -53,7 +51,6 @@ export default function ProjectsPage(){
           href=""
           github="https://github.com/bumpylumps/nest-rest-api"
           tech="TypeScript, NestJS"
-          gradient="from-pink-800 to-rose-900"
         />
         </div>
       </div>
