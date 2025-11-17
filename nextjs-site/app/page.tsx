@@ -21,9 +21,6 @@ export default function HomePage() {
             <p className="text-2xl md:text-3xl text-mgs-dark mb-4">
               Software Engineer
             </p>
-            <p className="text-lg text-mgs-dark max-w-2xl mx-auto">
-              Building digital experiences at the intersection of technology and creativity
-            </p>
           </div>
         </div>
 
@@ -45,8 +42,6 @@ export default function HomePage() {
             title="Blog"
             icon={Terminal}
             gridSpan="col-span-8 row-span-2"
-            gradient="from-blue-600 to-blue-800"
-            description=""
           />
 
           <BentoCard 
@@ -54,8 +49,6 @@ export default function HomePage() {
             icon={User}
             title="About Me"
             gridSpan="col-span-4 row-span-2"
-            gradient= "from-slate-800 to-slate-900"
-            description=""
           />
 
             <BentoCard 
@@ -63,8 +56,6 @@ export default function HomePage() {
             icon={FileText}
             title="Resume"
             gridSpan="col-span-5 row-span-2"
-            gradient="from-emerald-600 to-teal-700"
-            description=""
           />
 
           < BentoCard 
@@ -72,8 +63,6 @@ export default function HomePage() {
             icon={Briefcase}
             title="Recent Projects"
             gridSpan="col-span-7 row-span-2"
-            gradient="from-indigo-600 to-pink-600"
-            description=""
             />
           
   
@@ -84,15 +73,15 @@ export default function HomePage() {
               <h3 className="text-xl font-bold mb-3">Connect With Me</h3>
               <div className="flex gap-4 justify-center">
                 <a href="https://github.com/bumpylumps" target="_blank" rel="noopener noreferrer" 
-                   className="hover:scale-110 transition-transform">
+                   className="hover:scale-110 hover:text-mgs-tan transition-transform">
                   <Github size={28} />
                 </a>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-                   className="hover:scale-110 transition-transform">
+                   className="hover:scale-110 hover:text-mgs-tan transition-transform">
                   <Instagram size={28} />
                 </a>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                   className="hover:scale-110 transition-transform">
+                   className="hover:scale-110 hover:text-mgs-tan transition-transform">
                   <Twitter size={28} />
                 </a>
               </div>
