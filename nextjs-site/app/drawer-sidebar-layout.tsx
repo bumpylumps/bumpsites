@@ -56,7 +56,7 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
               className="text-mgs-dark hover:text-mgs-tan transition-colors">
               {isDrawerOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
-            <span className="text-2xl font-bold text-mgs-dark">Alex Fulop</span>
+            <span className="text-2xl font-bold text-mgs-dark">Bumpsites</span>
           </div>
 
         {/* Breadcrumbs */}
