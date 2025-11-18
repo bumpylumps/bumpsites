@@ -10,7 +10,7 @@ export default function BlogPage() {
 
       <section className="group mb-12">
         <Ghost size={32} className="mr-3 text-mgs-dark group-hover:text-mgs-tan"/>
-        <h2 className="text-3xl font-bold text-mgs-dark mb-6">Paranormal</h2>
+        <h2 className="çext-3xl font-bold text-mgs-dark mb-6">Paranormal</h2>
         <div className="space-y-4">
           <BlogPostCard 
             title="The Mystery of Room 404"
