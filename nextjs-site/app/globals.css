@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #5f5f50;
   --foreground: #171717;
 }
 
@@ -18,12 +18,14 @@
   --color-mgs-active: #767664; 
 }
 
+/*  
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #5f5f50;
     --foreground: #ededed;
   }
 }
+  */
 
 body {
   background: var(--background);

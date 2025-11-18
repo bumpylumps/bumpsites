@@ -7,15 +7,14 @@ interface BlogPostCardProps{
     date: string;
     slug: string;
     excerpt: string;
-    category: 'tech' | 'paranormal' | 'life';
 }
 
-export function BlogPostCard({ title, excerpt, date, category, slug }: BlogPostCardProps) {
+export function BlogPostCard({ title, excerpt, date, slug }: BlogPostCardProps) {
 
     return (
         <Link
             href={`/blog/${slug}`}
-            className={`block bg-mgs-menu p-6 shadow-md hover:scale-[1.02] transition-all border-2 border-mgs-border`}
+            className={`block bg-mgs-menu p-6 shadow-md hover:scale-[1.02] hover:bg-mgs-active transition-all border-2 border-mgs-border`}
         >
             <div className="flex justify-between items-start mb-2">
                 <h3 className="text-2xl font-semibold text-mgs-dark">{title}</h3>
