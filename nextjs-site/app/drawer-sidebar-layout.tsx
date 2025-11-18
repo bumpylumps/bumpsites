@@ -106,18 +106,27 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
                 <div key={item.href}>
                   {item.submenu ? (
                     <>
-                      <button
-                        onClick={toggleBlog}
-                        className="w-full flex items-center justify-between px-6 py-3 hover:bg-mgs-tan transition-colors">
+                    <div className="flex items-center justify-between">
+                      <Link
+                       href={item.href}
+                        className="flex flex-1 items-center justify-between px-6 py-3 hover:bg-mgs-tan transition-colors"
+                        >
                         <div className="flex items-center space-x-3">
                           <Icon size={20} />
                           <span className="font-medium">{item.label}</span>
                         </div>
+                        </Link>
+                      <button
+                         onClick={toggleBlog}
+                         className="items-center px-6 py-3 hover:bg-mgs-tan transition-colors"
+                      >
                         <ChevronDown 
                           size={20} 
                           className={`transform transition-transform ${blogExpanded ? 'rotate-180' : ''}`}
                         />
                       </button>
+                      </div>
+                      <div>
                       {blogExpanded && (
                         <div className="bg-mgs-active">
                           {item.submenu.map((subItem) => (
@@ -130,6 +139,7 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
                           ))}
                         </div>
                       )}
+                      </div>
                     </>
                   ) : (
                     <Link

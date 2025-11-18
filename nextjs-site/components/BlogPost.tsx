@@ -7,6 +7,6 @@ interface BlogPostProps {
 
 export function BlogPost({ title, subject, body, date }: BlogPostProps) {
     return (
-        
+        <div><p>Hello</p></div>
     )
 }

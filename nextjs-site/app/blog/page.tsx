@@ -4,12 +4,12 @@ import { BlogPostCard } from '@/components/BlogPostCard'
 
 export default function BlogPage() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-5xl font-bold text-slate-900 mb-12">Blog</h1>
+    <div className="max-w-4xl mx-auto border-2 border-mgs-border px-6 py-20">
+      <h1 className="text-5xl font-bold text-mgs-dark mb-12">Blog</h1>
 
       <section className="mb-12">
-        <Ghost size={32} className="mr-3 text-purple-600"/>
-        <h2 className="text-3xl font-bold text-slate-900 mb-6">Paranormal</h2>
+        <Ghost size={32} className="mr-3 text-mgs-dark"/>
+        <h2 className="text-3xl font-bold text-mgs-dark mb-6">Paranormal</h2>
         <div className="space-y-4">
           <BlogPostCard 
             title="The Mystery of Room 404"
@@ -35,8 +35,8 @@ export default function BlogPage() {
         </div>
       </section>
       <section className="mb-12">
-        <Terminal size={32} className="mr-3 text-blue-600" />
-        <h2 className="text-3xl font-bold text-slate-900 mb-6">Tech</h2>
+        <Terminal size={32} className="mr-3 text-mgs-dark" />
+        <h2 className="text-3xl font-bold text-mgs-dark mb-6">Tech</h2>
         <div className="space-y-4">
           <BlogPostCard 
             title="Building Modern Web Apps"
@@ -62,8 +62,8 @@ export default function BlogPage() {
         </div>
       </section>
       <section className="mb-12">
-        <Coffee size={32} className="text-pink-600" />
-        <h2 className="text-3xl font-bold text-slate-900 mb-6">Slice of Life</h2>
+        <Coffee size={32} className="text-mgs-dark" />
+        <h2 className="text-3xl font-bold text-mgs-dark mb-6">Slice of Life</h2>
         <div className="space-y-4">
           <BlogPostCard 
             title="Coffee Shop Chronicles"
