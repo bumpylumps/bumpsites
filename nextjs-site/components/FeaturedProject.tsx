@@ -21,7 +21,7 @@ export function FeaturedProject({ title, description, href, github, tech, logo }
             </div>
             <div className="p-8 flex flex-col justify-center">
               <h3 className="text-3xl text-mgs-dark font-bold mb-4">{title}</h3>
-              <p className="text-mgs-dark">{tech}</p>
+              <p className="text-mgs-dark text-sm mb-3 font-mono">{tech}</p>
               <p className="text-lg text-mgs-dark mb-6 leading-relaxed">
                 {description}
               </p>
