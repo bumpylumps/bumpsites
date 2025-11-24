@@ -11,7 +11,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-mgs-dark: #2f2f28;
-  --color-mgs-menu: #5f5f50;
+  --color-mgs-menu: #96967D;
   --color-mgs-tan: #D9D2B6;
   --color-mgs-border: #313129;
   --color-mgs-text: #3c3c33;
@@ -36,3 +36,9 @@ body {
 @media print {
   header, nav, .fixed { display: none !important; }
 }
+
+p {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+

@@ -59,7 +59,7 @@ export default async function BlogPage() {
             key={post.slug}
           />) }
            <Link
-          href="blog/life"
+          href="/blog/life"
           className="inline-block px-6 py-2 font-semibold text-sm text-mgs-dark border-2 border-mgs-border hover:bg-mgs-active hover:scale-[1.02] transition-transform shadow-md"
           >View All Life</Link>
         </div>

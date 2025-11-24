@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Menu, X, Github, Instagram, Twitter, ChevronDown, ChevronRight, Home, User, BookOpen, Briefcase, FileText, Terminal, Coffee, Ghost } from 'lucide-react';
+import styles from './page.module.css'
 
 import { getPostBySlug, getPostSlugs } from '@/lib/posts'
 
@@ -30,16 +31,15 @@ if (!post) {
 } else {
 
     return (
-        <div className="max-w-6xl mx-auto p-8 border-2 border-mgs-border">
+        <div className="max-w-6xl mx-auto p-8 border-2 border-mgs-border mb-8">
             <div className="flex items-end mb-6 mr-3">
             <div className="text-mgs-dark mr-4">{categoryIcons[post.category]}</div>
             <h1 className="text-3xl font-bold text-mgs-dark">{post.title}</h1>
             </div>
             <div className="text-sm text-mgs-dark font-mono">{post.date}</div>
-            <p className="text-lg font-bold text-mgs-dark">{post.excerpt}</p>
 
             <div 
-                className="prose prose-lg max-w-none text-mgs-dark mt-6"
+                className={`prose prose-lg max-w-none text-mgs-dark mt-6 ${styles.blogContent}`}
                 dangerouslySetInnerHTML={{ __html: post.content }} />
 
         </div>

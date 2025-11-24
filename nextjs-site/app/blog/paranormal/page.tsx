@@ -1,19 +1,22 @@
 
-import { Menu, X, Github, Instagram, Twitter, ChevronDown, ChevronRight, Home, User, BookOpen, Briefcase, FileText } from 'lucide-react';
+import { Ghost } from 'lucide-react';
+import { getAllPosts } from '@/lib/posts'
+import { BlogPostCard } from '@/components/BlogPostCard'
 
-export default function ParanormalBlog(){
-    const posts = [
-        { title: 'The Mystery of Room 404', excerpt: 'An investigation into the most haunted hotel room in America...' },
-        { title: 'Ghost Stories from Abandoned Places', excerpt: 'Urban exploration meets paranormal investigation...' },
-        { title: 'Urban Legends Explored', excerpt: 'Separating fact from fiction in modern folklore...' }
-    ];
+export default async function TechBlog(){
+    const { paranormal } = await getAllPosts()
 
     return (
         <div className="max-w-4xl mx-auto px-6 py-20">
-        <h1>Paranormal Blog</h1>
-        {posts.map((post, idx) => (
+        <div className="text-mgs-dark mr-4 mb-4">{<Ghost size={32} />}</div>
+        {paranormal.map((post, idx) => (
             <div key={idx}>
-                {/* post card JSX */}
+                <BlogPostCard
+                  title={post.title}
+                  excerpt={post.excerpt}
+                  date={post.date}
+                  slug={post.slug}
+                   />
             </div>
         ))}
       </div>

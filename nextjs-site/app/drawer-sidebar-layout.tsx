@@ -46,7 +46,7 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
 
 
   return (
-    <div className="min-h-screen bg-mgs-menu">
+    <div className="flex flex-col bg-mgs-menu">
       {/* Top Bar with Logo/Menu Button */}
       <div className="fixed top-0 left-0 right-0 bg-mgs-menu border-b-2 border-b-mgs-border z-40">
         <div className="px-6 py-4 flex items-center justify-between">
@@ -176,7 +176,7 @@ const DrawerSidebarLayout = ({ children }: {children: React.ReactNode}) => {
       </div>
 
       {/* Main Content */}
-      <main className="pt-24">
+      <main className="pt-24 pb-8">
         {children}
       </main>
     </div>
