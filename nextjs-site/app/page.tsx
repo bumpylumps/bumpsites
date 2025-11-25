@@ -58,7 +58,7 @@ export default function HomePage() {
             gridSpan="col-span-5 row-span-2"
           />
 
-          < BentoCard 
+          <BentoCard 
             href="/projects"
             icon={Briefcase}
             title="Recent Projects"
