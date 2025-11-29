@@ -97,42 +97,24 @@ export default function HomePage() {
             href="/about"
             icon={User}
             title="About Me"
-            gradient="from-pink-500 to-rose-600"
           />
 
           <MobileCard 
             href="/projects"
             icon={Briefcase}
             title="Projects"
-            gradient="from-indigo-600 to-pink-600"
           />
 
           <MobileCard 
-            href="/blog/paranormal"
-            icon={Ghost}
-            title="Paranormal Blog"
-            gradient="from-purple-600 to-purple-800"
-          />
-
-          <MobileCard 
-            href="/blog/tech"
+            href="/blog"
             icon={Terminal}
-            title="Tech Blog"
-            gradient="from-blue-600 to-blue-800"
-          />
-
-          <MobileCard 
-            href="/blog/life"
-            icon={Coffee}
-            title="Slice of Life Blog"
-            gradient="from-blue-600 to-blue-800"
+            title="Blog"
           />
 
           <MobileCard 
             href="/resume"
             icon={FileText}
             title="Resume"
-            gradient="from-emerald-600 to-teal-700"
           />
         </div>
       </div>
