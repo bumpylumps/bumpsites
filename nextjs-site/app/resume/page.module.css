@@ -16,7 +16,7 @@
         }
         
         .resumeContainer {
-            font-family: 'Times New Roman', serif;
+            font-family: Arial, sans-serif;
             font-size: 12pt;
             line-height: 1.1;
             max-width: 8.5in;
@@ -141,7 +141,7 @@
         }
         
         .bulletPoint:before {
-            content: "❖";
+            content: "•";
             position: absolute;
             left: -18pt;
         }
@@ -163,7 +163,7 @@
         }
         
         .regularBullet:before {
-            content: "❖";
+            content: "•";
             position: absolute;
             left: -20pt;
         }

@@ -5,8 +5,8 @@ export default function Resume() {
     return (
 <div className={`max-w-4xl mx-auto p-8 ${styles.resumeContainer}`}>
     <div className={styles.buttonContainer}>
-    <a href="/resume.pdf"
-        download="Alexander Fulop-resume.pdf"
+    <a href="/alex-fulop-resume.pdf"
+        download="alex-fulop-resume.pdf"
         className={styles.downloadButton} > 
         Download PDF copy
     </a>
@@ -20,6 +20,13 @@ export default function Resume() {
     
     <div className={`${styles.section} ${styles.careerSummary}`}>
         <h2 className={styles.sectionTitle}>Career Summary</h2>
+        <span>
+            I build scalable web applications and microservices to integrate with existing systems on the web. Recent work includes developing platforms for legal case management, designing microservices to sync client data across multiple CRM platforms, and building automated content syndication features for publishing audio and video content on websites.
+        </span>
+    </div>
+
+    <div className={`${styles.section} ${styles.careerSummary}`}>
+        <h2 className={styles.sectionTitle}>Skills</h2>
         <div className={styles.summaryItem}>
             <span className={styles.summaryLabel}>Experience:</span> 4+ years of Full Stack Web Development
         </div>
@@ -33,7 +40,7 @@ export default function Resume() {
             <span className={styles.summaryLabel}>Tools:</span> Git, Postman, Ngrok, Docker
         </div>
         <div className={styles.summaryItem}>
-            <span className={styles.summaryLabel}>AI Tools:</span> Claude (MCP implementation), AMP for debugging and code generation
+            <span className={styles.summaryLabel}>AI Tools:</span> MCP, AMP for debugging and code generation
         </div>
     </div>
     
@@ -53,13 +60,13 @@ export default function Resume() {
             <div className={styles.jobDescription}>
                 <div className={styles.bulletPoint}>Designed and built automated microservices for CRM integration, saving clients $77,000 annually in operations</div>
                 <div className={styles.bulletPoint}>Optimized microservice performance for long-term clients:
-                    <div className={styles.subBullet}>Improved microservice performance by 60% through code refactoring, reducing API calls from 500 to 50 per sync cycle</div>
-                    <div className={styles.subBullet}>Updated microservice features for new client platforms</div>
+                    <div className={styles.bulletPoint}>Improved microservice performance by 60% through code refactoring, reducing API calls from 500 to 50 per sync cycle</div>
+                    <div className={styles.bulletPoint}>Updated microservice features for new client platforms</div>
                 </div>
                 <div className={styles.bulletPoint}>Led team collaboration initiatives:
-                    <div className={styles.subBullet}>Created company code standards guide</div>
-                    <div className={styles.subBullet}>Organized weekly development meetings</div>
-                    <div className={styles.subBullet}>Assisted in discovery for client needs and services</div>
+                    <div className={styles.bulletPoint}>Created company code standards guide</div>
+                    <div className={styles.bulletPoint}>Organized weekly development meetings</div>
+                    <div className={styles.bulletPoint}>Assisted in discovery for client needs and services</div>
                 </div>
                 <div className={styles.bulletPoint}>Mentored junior developer through code reviews, skill development and debugging assistance</div>
             </div>
@@ -81,7 +88,7 @@ export default function Resume() {
                 
                 <div style={{marginLeft: '1rem', marginTop: '0.5rem'}}>
                     <div style={{fontWeight: 500}}>RevOps HQ (July 2025 - October 2025)</div>
-                    <div className={styles.jobTech}>Technologies: TypeScript, Node.js</div>
+                    <div className={styles.jobTech}>Technologies: NextJS, TypeScript, .Net, Go</div>
                     <div className={styles.bulletPoint}>Implemented Model Context Protocol (MCP) servers enabling AI assistants to securely access client databases, demonstrating expertise in emerging AI integration patterns</div>
                     <div className={styles.bulletPoint}>Conducted technical discovery for prospective clients, with solutions leading to 3 successful contract conversions</div>
                     <div className={styles.bulletPoint}>Built automated abandoned cart recovery system using Shopify API, increasing client revenue by 30%</div>
@@ -98,7 +105,7 @@ export default function Resume() {
     
     <div className={styles.footer}>
         <div>
-        <a href="https://github.com/bumpylumps">Github</a> ▪ <a href="https://www.linkedin.com/in/alexander-fulop/">Linkedin</a> ▪ <a href="https://www.bumpsites.com/">Bumpsites</a> ▪ <a href="https://x.com/alayfalupe">Twitter</a>
+        <a href="https://github.com/bumpylumps">Github</a> ▪ <a href="https://www.linkedin.com/in/alexander-fulop/">Linkedin</a> ▪ <a href="https://www.bumpsites.com/">Bumpsites</a> ▪ <a href="https://x.com/alayfalupe">X</a>
         </div>
     </div>
 </div>
