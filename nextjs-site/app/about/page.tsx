@@ -7,7 +7,11 @@ export default function AboutPage() {
         <div className="grid grid-cols-[auto_1fr] gap-4">
         <img src="/portriat.jpeg" className="w-48 h-auto"/>
         <p className="text-2xl text-mgs-dark mb-6 leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+          My name is Alex Fulop. 
+          I build scalable web applications and microservices to integrate with existing systems on the web. 
+          Recent work includes developing platforms for legal case management, designing microservices to sync 
+          client data across multiple CRM platforms, and building automated content syndication features 
+          for publishing audio and video content on websites. You can reach me at <a href="mailto:bumpsites@gmail.com">bumpsites@gmail.com</a>
         </p>
         </div>
       </div>
