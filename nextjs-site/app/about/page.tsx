@@ -8,10 +8,10 @@ export default function AboutPage() {
         <img src="/portriat.jpeg" className="w-48 h-auto"/>
         <p className="text-2xl text-mgs-dark mb-6 leading-relaxed">
           My name is Alex Fulop. 
-          I build scalable web applications and microservices to integrate with existing systems on the web. 
+          I build scalable full stack web applications and microservices to integrate with existing systems on the web. 
           Recent work includes developing platforms for legal case management, designing microservices to sync 
           client data across multiple CRM platforms, and building automated content syndication features 
-          for publishing audio and video content on websites. You can reach me at <a href="mailto:bumpsites@gmail.com">bumpsites@gmail.com</a>
+          for publishing podcasts and video content on websites. You can reach me at <a href="mailto:bumpsites@gmail.com">bumpsites@gmail.com</a>
         </p>
         </div>
       </div>
