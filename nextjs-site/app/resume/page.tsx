@@ -22,8 +22,8 @@ export default function Resume() {
         <h2 className={styles.sectionTitle}>Career Summary</h2>
         <span>
             I build scalable full stack web applications and microservices to integrate with existing systems on the web. 
-            Recent work includes developing a platform for legal case management, designing microservices to sync 
-            client business data across multiple CRM platforms, and building websites with automated content syndication features 
+            Recent work includes developing a platform for legal case management, building microservices to sync 
+            client business data across multiple CRM platforms, and creating websites with automated content syndication features 
             for publishing podcasts and video content.
         </span>
     </div>
