@@ -21,7 +21,10 @@ export default function Resume() {
     <div className={`${styles.section} ${styles.careerSummary}`}>
         <h2 className={styles.sectionTitle}>Career Summary</h2>
         <span>
-            I build scalable web applications and microservices to integrate with existing systems on the web. Recent work includes developing platforms for legal case management, designing microservices to sync client data across multiple CRM platforms, and building automated content syndication features for publishing audio and video content on websites.
+            I build scalable full stack web applications and microservices to integrate with existing systems on the web. 
+            Recent work includes developing a platform for legal case management, designing microservices to sync 
+            client business data across multiple CRM platforms, and building websites with automated content syndication features 
+            for publishing podcasts and video content.
         </span>
     </div>
 
