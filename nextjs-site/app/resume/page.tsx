@@ -92,16 +92,16 @@ export default function Resume() {
                 <div style={{marginLeft: '1rem', marginTop: '0.5rem'}}>
                     <div style={{fontWeight: 500}}>RevOps HQ (July 2025 - October 2025)</div>
                     <div className={styles.jobTech}>Technologies: NextJS, TypeScript, .Net, Go</div>
-                    <div className={styles.bulletPoint}>Implemented Model Context Protocol (MCP) servers enabling AI assistants to securely access client databases, demonstrating expertise in emerging AI integration patterns</div>
-                    <div className={styles.bulletPoint}>Conducted technical discovery for prospective clients, with solutions leading to 3 successful contract conversions</div>
+                    <div className={styles.bulletPoint}>Implemented Model Context Protocol (MCP) servers enabling AI assistants to securely access client databases</div>
+                    <div className={styles.bulletPoint}>Conducted technical discovery to solve prospective client issues, with solutions leading to 3 successful contract conversions</div>
                     <div className={styles.bulletPoint}>Built automated abandoned cart recovery system using Shopify API, increasing client revenue by 30%</div>
-                    <div className={styles.bulletPoint}>Developed microservices synchronizing business data across HubSpot, Magento, and custom CRMs</div>
-                    <div className={styles.bulletPoint}>Created case management MVP with document uploading, court order tracking, and a message system for tracking communication between parties</div>
+                    <div className={styles.bulletPoint}>Developed microservices for clients, synchronizing their business data across HubSpot, Magento, and custom CRMs</div>
+                    <div className={styles.bulletPoint}>Created a legal case management platform with document uploading, court order tracking, and a message system for tracking communication between parties</div>
                 </div>
                 
                 <div style={{fontWeight: 600, marginTop: '1rem', marginBottom: '0.25rem'}}>Core Services:</div>
-                <div className={styles.bulletPoint}>Architected and deployed custom web applications for small business clients</div>
-                <div className={styles.bulletPoint}>Built podcast websites with automated content syndication via Buzzsprout and YouTube APIs, streamlining multi-format episode publishing</div>
+                <div className={styles.bulletPoint}>Architected and deployed custom websites for small business clients</div>
+                <div className={styles.bulletPoint}>Built client podcast websites with automated content syndication via Buzzsprout and YouTube APIs, streamlining audio and video episode publishing</div>
             </div>
         </div>
     </div>
