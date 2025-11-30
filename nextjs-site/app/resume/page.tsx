@@ -61,15 +61,14 @@ export default function Resume() {
             </div>
             <div className={styles.jobTech}>Technologies: NextJS, TypeScript, Node.js, C#</div>
             <div className={styles.jobDescription}>
-                <div className={styles.bulletPoint}>Designed and built automated microservices for CRM integration, saving clients $77,000 annually in operations</div>
-                <div className={styles.bulletPoint}>Optimized microservice performance for long-term clients:
-                    <div className={styles.bulletPoint}>Improved microservice performance by 60% through code refactoring, reducing API calls from 500 to 50 per sync cycle</div>
-                    <div className={styles.bulletPoint}>Updated microservice features for new client platforms</div>
-                </div>
-                <div className={styles.bulletPoint}>Led team collaboration initiatives:
-                    <div className={styles.bulletPoint}>Created company code standards guide</div>
-                    <div className={styles.bulletPoint}>Organized weekly development meetings</div>
-                    <div className={styles.bulletPoint}>Assisted in discovery for client needs and services</div>
+                <div className={styles.bulletPoint}>Built automated microservices for CRM integrations saving clients $77,000 annually in operations by syncing their business data across several platforms</div>
+                <div className={styles.bulletPoint}>Improved existing microservice performance by 60% through code refactoring lowering API calls for CRM integrations to avoid rate limits and service bottlenecking</div>
+                <div className={styles.bulletPoint}>Updated microservice features for client’s new CRM services to preserve their functionality</div>
+
+                <div className={styles.bulletPoint}>Led team collaboration initiatives to improve internal developer experience:
+                    <div className={styles.bulletPoint}>Created company code standards documentation</div>
+                    <div className={styles.bulletPoint}>Organized weekly developer meetings</div>
+                    <div className={styles.bulletPoint}>Assisted in discovery for client issues and integration bugs</div>
                 </div>
                 <div className={styles.bulletPoint}>Mentored junior developer through code reviews, skill development and debugging assistance</div>
             </div>
@@ -92,16 +91,16 @@ export default function Resume() {
                 <div style={{marginLeft: '1rem', marginTop: '0.5rem'}}>
                     <div style={{fontWeight: 500}}>RevOps HQ (July 2025 - October 2025)</div>
                     <div className={styles.jobTech}>Technologies: NextJS, TypeScript, .Net, Go</div>
-                    <div className={styles.bulletPoint}>Implemented Model Context Protocol (MCP) servers enabling AI assistants to securely access client databases</div>
-                    <div className={styles.bulletPoint}>Conducted technical discovery to solve prospective client issues, with solutions leading to 3 successful contract conversions</div>
-                    <div className={styles.bulletPoint}>Built automated abandoned cart recovery system using Shopify API, increasing client revenue by 30%</div>
+                    <div className={styles.bulletPoint}>Implemented Model Context Protocol (MCP) servers enabling Claude to securely access client databases and provide assistance to client employees</div>
+                    <div className={styles.bulletPoint}>Conducted technical discovery to solve prospective client CRM integration issues with solutions leading to 3 successful contract conversions</div>
+                    <div className={styles.bulletPoint}>Built an automated abandoned cart recovery system using the Shopify API increasing client order recovery by 30%</div>
                     <div className={styles.bulletPoint}>Developed microservices for clients, synchronizing their business data across HubSpot, Magento, and custom CRMs</div>
                     <div className={styles.bulletPoint}>Created a legal case management platform with document uploading, court order tracking, and a message system for tracking communication between parties</div>
                 </div>
                 
                 <div style={{fontWeight: 600, marginTop: '1rem', marginBottom: '0.25rem'}}>Core Services:</div>
-                <div className={styles.bulletPoint}>Architected and deployed custom websites for small business clients</div>
-                <div className={styles.bulletPoint}>Built client podcast websites with automated content syndication via Buzzsprout and YouTube APIs, streamlining audio and video episode publishing</div>
+                <div className={styles.bulletPoint}>Architected and deployed custom websites for small business clients improving their web presence and customer outreach</div>
+                <div className={styles.bulletPoint}>Built client websites with automated content syndication via the Buzzsprout and YouTube APIs, streamlining podcast audio and video episode publishing</div>
             </div>
         </div>
     </div>
