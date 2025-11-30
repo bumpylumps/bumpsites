@@ -34,7 +34,7 @@ export default function Resume() {
             <span className={styles.summaryLabel}>Languages:</span> TypeScript, Go, C#, Node.js
         </div>
         <div className={styles.summaryItem}>
-            <span className={styles.summaryLabel}>Frameworks:</span> Next.js, React, .NET 
+            <span className={styles.summaryLabel}>Frameworks:</span> Next.js, .NET 
         </div>
         <div className={styles.summaryItem}>
             <span className={styles.summaryLabel}>Tools:</span> Git, Postman, Ngrok, Docker
