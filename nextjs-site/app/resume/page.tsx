@@ -21,10 +21,7 @@ export default function Resume() {
     <div className={`${styles.section} ${styles.careerSummary}`}>
         <h2 className={styles.sectionTitle}>Career Summary</h2>
         <span>
-            I build scalable full stack web applications and microservices to integrate with existing systems on the web. 
-            Recent work includes developing a platform for legal case management, building microservices to sync 
-            client business data across multiple CRM platforms, and creating websites with automated content syndication features 
-            for publishing podcasts and video content.
+            I build scalable full stack web applications and microservices that integrate with customer relationship management (CRM) systems on the web. Recent work includes developing a platform for legal case management, building microservices to sync client business data across multiple CRM platforms, and creating websites with automated content syndication features for publishing podcasts and video content.
         </span>
     </div>
 
@@ -43,7 +40,7 @@ export default function Resume() {
             <span className={styles.summaryLabel}>Tools:</span> Git, Postman, Ngrok, Docker
         </div>
         <div className={styles.summaryItem}>
-            <span className={styles.summaryLabel}>AI Tools:</span> MCP, AMP for debugging and code generation
+            <span className={styles.summaryLabel}>AI Tools:</span> Claude, AMP 
         </div>
     </div>
     
@@ -56,10 +53,11 @@ export default function Resume() {
                 <div className={styles.jobLocation}>Remote, USA</div>
             </div>
             <div className={styles.jobTitleRow}>
-                <div className={styles.jobTitle}>Software Engineer (Full-Time)</div>
+                <div className={styles.jobTech}>Tech Consulting Company</div>
                 <div className={styles.jobDates}>January 2024 - January 2025</div>
             </div>
-            <div className={styles.jobTech}>Technologies: NextJS, TypeScript, Node.js, C#</div>
+            <div className={styles.jobTitle}>Software Engineer</div>
+            <div className={styles.jobTech}>Technologies: TypeScript, Node.js, C#</div>
             <div className={styles.jobDescription}>
                 <div className={styles.bulletPoint}>Built automated microservices for CRM integrations saving clients $77,000 annually in operations by syncing their business data across several platforms</div>
                 <div className={styles.bulletPoint}>Improved existing microservice performance by 60% through code refactoring lowering API calls for CRM integrations to avoid rate limits and service bottlenecking</div>
@@ -83,14 +81,14 @@ export default function Resume() {
                 <div className={styles.jobTitle}>Owner/Freelance Software Engineer</div>
                 <div className={styles.jobDates}>January 2022 – Present</div>
             </div>
-            <div className={styles.jobTech}>Technologies: NextJS, TypeScript, dotNet, Go</div>
+            <div className={styles.jobTech}>Technologies: NextJS, TypeScript, NodeJS, Go</div>
             
             <div className={styles.jobDescription}>
                 <div style={{fontWeight: 600, marginTop: '0.5rem', marginBottom: '0.25rem'}}>Contract Engagements:</div>
                 
                 <div style={{marginLeft: '1rem', marginTop: '0.5rem'}}>
                     <div style={{fontWeight: 500}}>RevOps HQ (July 2025 - October 2025)</div>
-                    <div className={styles.jobTech}>Technologies: NextJS, TypeScript, .Net, Go</div>
+                    <div className={styles.jobTech}>Tech Consulting Company</div>
                     <div className={styles.bulletPoint}>Implemented Model Context Protocol (MCP) servers enabling Claude to securely access client databases and provide assistance to client employees</div>
                     <div className={styles.bulletPoint}>Conducted technical discovery to solve prospective client CRM integration issues with solutions leading to 3 successful contract conversions</div>
                     <div className={styles.bulletPoint}>Built an automated abandoned cart recovery system using the Shopify API increasing client order recovery by 30%</div>
