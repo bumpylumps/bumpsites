@@ -1,4 +1,6 @@
 
+
+       
        @media print {
             body { margin: 0; }
             .page-break { page-break-before: always; }
@@ -23,7 +25,6 @@
             margin: 0 auto;
             padding: 0.4in;
             color: #000;
-            background: white;
         }
         
         .header {
@@ -207,3 +208,5 @@
         .downloadButton:hover {
             background: #4338ca;
         }
+
+     
