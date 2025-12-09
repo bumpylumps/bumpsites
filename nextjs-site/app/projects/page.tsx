@@ -15,7 +15,7 @@ export default function ProjectsPage(){
             description = "An immersive paranormal investigation experience. Explore haunted locations, collect evidence, uncover mysteries, and piece together the stories of the spirits that remain."
             href = "https://ghostplanet.bumpsites.com" 
             github = "https://github.com/bumpylumps"
-            tech = "Go, NextJs"
+            tech = "Go, React"
             logo = {<svg viewBox="0 0 200 200" className="w-full h-full">
             <defs>
               <radialGradient id="planetGlow" cx="50%" cy="50%" r="50%">
