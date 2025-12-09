@@ -30,16 +30,16 @@ export function FeaturedProject({ title, description, href, github, tech, logo }
                   href={href} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-block bg-mgs-menu border-2 border-mgs-border text-mgs-dark px-8 py-3 font-semibold hover:bg-mgs-active transition-colors">
+                  className="inline-block bg-mgs-menu border-2 border-mgs-border text-mgs-dark px-6 py-2 font-semibold hover:bg-mgs-active transition-colors text-sm">
                   Visit Site →
                 </a>
                 <a 
                   href={github} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex bg-mgs-menu text-mgs-dark items-center border-2 border-mgs-border px-8 py-3 font-semibold hover:bg-mgs-active transition-colors">
-                  <Github size={20} className="mr-2" />
-                  GitHub
+                  className="inline-flex bg-mgs-menu text-mgs-dark items-center border-2 border-mgs-border px-6 py-2 font-semibold hover:bg-mgs-active transition-colors text-sm">
+                  <Github size={18} className="mr-2" />
+                  Code
                 </a>
               </div>
             </div>
