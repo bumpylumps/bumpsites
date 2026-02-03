@@ -1,7 +1,7 @@
 ---
 title: "An Honest Look at Burnout"
 date: "2025-11-24"
-category: "tech"
+category: "life"
 excerpt: "A very smart friend of mine once said..."
 ---
 
