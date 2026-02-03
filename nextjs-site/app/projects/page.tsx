@@ -13,8 +13,8 @@ export default function ProjectsPage(){
         <FeaturedProject 
             title = "Ghost-Planet"
             description = "An immersive paranormal investigation experience. Explore haunted locations, collect evidence, uncover mysteries, and piece together the stories of the spirits that remain."
-            href = "https://ghostplanet.bumpsites.com" 
-            github = "https://github.com/bumpylumps"
+            href = "https://github.com/bumpylumps/ghost-planet" 
+            github = "https://github.com/bumpylumps/ghost-planet"
             tech = "Go, React"
             logo = {<svg viewBox="0 0 200 200" className="w-full h-full">
             <defs>
